@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinemateca | Biblioteca de Filmes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container topo__linha">
+      <a class="marca" href="#" aria-label="Cinemateca, voltar ao início">
+        <span class="marca__detalhe"></span>Exclusiflix
+      </a>
+      <button class="botao botao--azul" id="btn-novo" type="button">Adicionar filme</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="abertura">
+      <h1>Biblioteca de filmes</h1>
+      <p>Consulte datas de lançamento, marque os seus favoritos e acompanhe o que ainda vai estreiar.</p>
+      <p class="contagem" id="contagem" aria-live="polite"></p>
+    </section>
+
+    <section class="controles" aria-label="Filtros">
+      <div class="abas" role="tablist">
+        <button class="aba ativa" role="tab" data-aba="todos" type="button">Todos</button>
+        <button class="aba" role="tab" data-aba="proximos" type="button">Próximos lançamentos</button>
+        <button class="aba" role="tab" data-aba="favoritos" type="button">Favoritos</button>
+        <button class="aba" role="tab" data-aba="assistidos" type="button">Assistidos</button>
+      </div>
+
+      <div class="campos">
+        <label class="campo campo--busca">
+          <span>Buscar</span>
+          <input type="search" id="busca" placeholder="Título ou diretor">
+        </label>
+
+        <label class="campo">
+          <span>Gênero</span>
+          <select id="filtro-genero">
+            <option value="">Todos</option>
+          </select>
+        </label>
+
+        <label class="campo">
+          <span>Ordenar por</span>
+          <select id="ordem">
+            <option value="recentes">Lançamento (mais recente)</option>
+            <option value="antigos">Lançamento (mais antigo)</option>
+            <option value="titulo">Título (A a Z)</option>
+            <option value="nota">Minha nota (maior primeiro)</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="grade" id="grade" aria-label="Lista de filmes"></section>
+
+    <p class="vazio" id="vazio" hidden>Nenhum filme encontrado com esses filtros.</p>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Cinemateca &middot; projeto de estudo em HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- detalhes exclusivos do filme -->
+  <dialog id="modal-detalhes" class="modal">
+    <div class="modal__corpo">
+      <button class="modal__fechar" type="button" data-fechar aria-label="Fechar">&times;</button>
+      <p class="selo" id="det-selo"></p>
+      <h2 id="det-titulo"></h2>
+      <dl class="ficha">
+        <div><dt>Lançamento</dt><dd id="det-data"></dd></div>
+        <div><dt>Direção</dt><dd id="det-diretor"></dd></div>
+        <div><dt>Gênero</dt><dd id="det-genero"></dd></div>
+        <div><dt>Duração</dt><dd id="det-duracao"></dd></div>
+      </dl>
+      <p class="sinopse" id="det-sinopse"></p>
+      <div class="avaliacao">
+        <span class="avaliacao__rotulo">Sua nota</span>
+        <div class="estrelas" id="det-estrelas" role="group" aria-label="Sua nota de 1 a 5"></div>
+      </div>
+      <div class="modal__acoes">
+        <button class="botao" id="det-assistido" type="button"></button>
+        <button class="botao" id="det-favorito" type="button"></button>
+        <button class="botao" id="det-editar" type="button" hidden>Editar</button>
+        <button class="botao botao--perigo" id="det-remover" type="button" hidden>Remover da biblioteca</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Cadastro de filme -->
+  <dialog id="modal-cadastro" class="modal">
+    <form class="modal__corpo formulario" id="form-filme" novalidate>
+      <button class="modal__fechar" type="button" data-fechar aria-label="Fechar">&times;</button>
+      <h2 id="form-titulo">Adicionar filme</h2>
+
+      <label class="campo">
+        <span>Título</span>
+        <input type="text" name="titulo" required maxlength="80">
+      </label>
+
+      <label class="campo">
+        <span>Direção</span>
+        <input type="text" name="diretor" required maxlength="60">
+      </label>
+
+      <div class="formulario__duas">
+        <label class="campo">
+          <span>Gênero</span>
+          <select name="genero" id="form-genero" required></select>
+        </label>
+        <label class="campo">
+          <span>Data de lançamento</span>
+          <input type="date" name="lancamento" required>
+        </label>
+      </div>
+
+      <label class="campo">
+        <span>Duração (minutos)</span>
+        <input type="number" name="duracao" min="1" max="600" required>
+      </label>
+
+      <label class="campo">
+        <span>Sinopse</span>
+        <textarea name="sinopse" rows="4" maxlength="400"></textarea>
+      </label>
+
+      <p class="erro" id="form-erro" role="alert" hidden></p>
+
+      <div class="modal__acoes">
+        <button class="botao" type="button" data-fechar>Cancelar</button>
+        <button class="botao botao--azul" type="submit">Salvar filme</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
