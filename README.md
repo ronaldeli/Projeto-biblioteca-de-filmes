@@ -46,9 +46,9 @@ Favoritos, assistidos, notas e filmes cadastrados são guardados no navegador co
 
 | Tecnologia | Como foi usada |
 |---|---|
-| **HTML5** | Estrutura semântica e o elemento nativo `<dialog>` para os modais |
-| **CSS3** | Variáveis CSS (design tokens), Grid, Flexbox, transições e media queries |
-| **JavaScript (ES6+)** | Lógica completa da aplicação, sem nenhuma biblioteca externa |
+| **HTML** | Estrutura semântica e o elemento nativo `<dialog>` para os modais |
+| **CSS** | Variáveis CSS (design tokens), Grid, Flexbox, transições e media queries |
+| **JavaScript** | Lógica completa da aplicação, sem nenhuma biblioteca externa |
 
 ## ⚙️ Como funciona por dentro
 
@@ -70,16 +70,6 @@ Eventos        →  favoritos, detalhes, avaliação, cadastro e filtros
 4. Quando algo muda (favorito, nota, novo filme), os dados são salvos e a tela é renderizada de novo.
 
 Essa separação entre **estado → filtro → renderização** mantém a interface sempre consistente com os dados.
-
-### Decisões técnicas que valem destacar
-
-- **Datas sem erro de fuso horário:** a função `paraData()` monta a data a partir do texto `AAAA-MM-DD` usando o construtor local, evitando o clássico bug em que a data aparece um dia antes.
-- **Segurança contra injeção de HTML (XSS):** os cartões são criados com `createElement` e `textContent`, e não com `innerHTML`. Assim, o que o usuário digita no formulário nunca é interpretado como código.
-- **Busca tolerante a acentos:** `normalize('NFD')` com remoção de marcas diacríticas.
-- **Tolerância a falhas de armazenamento:** leitura e escrita no `localStorage` ficam dentro de `try/catch`; se o navegador bloquear o armazenamento, o site continua funcionando durante a sessão.
-- **Integridade dos dados:** ao remover um filme, ele também é retirado dos favoritos, dos assistidos e das notas.
-- **Acessibilidade básica:** uso de `aria-pressed` nos botões de favorito e `aria-label` nas estrelas de avaliação.
-- **Design responsivo:** grade com `auto-fill` e `minmax`, adaptando-se de celulares a telas grandes.
 
 ## 📁 Estrutura do projeto
 
