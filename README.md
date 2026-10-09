@@ -130,9 +130,13 @@ Depois, abra o `index.html` no navegador. Se preferir, use a extensão **Live Se
 ## 👨‍💻 Desenvolvedores
 
 **Ronald Eli**
+
 **Ittalo Henrique**
+
 **Cleberson Murilo**
+
 **Victor Matheus**
+
 **Vinicius Queiroz**
 
 [![GitHub](https://img.shields.io/badge/GitHub-ronaldeli-181717?style=flat&logo=github)](https://github.com/ronaldeli)
