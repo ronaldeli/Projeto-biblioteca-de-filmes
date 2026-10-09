@@ -117,7 +117,7 @@ Depois, abra o `index.html` no navegador. Se preferir, use a extensão **Live Se
 - [ ] Permitir upload de capa para os filmes cadastrados
 - [ ] Exportar e importar a biblioteca em arquivo JSON
 - [ ] Alternância entre tema claro e escuro
-- [ ] Testes automatizados das funções de filtro e data
+- [ ] Testes automatizados das funções de filtro e Data
 
 ## 👨‍💻 Desenvolvedores
 
