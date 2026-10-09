@@ -14,8 +14,6 @@ A **Biblioteca de Filmes** é uma aplicação web que funciona como um catálogo
 
 Foi desenvolvida **somente com HTML, CSS e JavaScript puro**, sem frameworks, bibliotecas ou back-end, com o objetivo de praticar os fundamentos da web: manipulação do DOM, eventos, organização de estado, persistência de dados e design responsivo.
 
-## 📸 Demonstração
-
 
 ## ✨ Funcionalidades
 
