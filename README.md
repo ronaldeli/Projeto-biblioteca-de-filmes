@@ -140,6 +140,7 @@ Depois, abra o `index.html` no navegador. Se preferir, use a extensão **Live Se
 **Vinicius Queiroz**
 
 [![GitHub](https://img.shields.io/badge/GitHub-ronaldeli-181717?style=flat&logo=github)](https://github.com/ronaldeli)
+[![GitHub](https://img.shields.io/badge/GitHub-ronaldeli-181717?style=flat&logo=github)](https://github.com/ittalohsilva)
 
 ---
 
