@@ -84,7 +84,7 @@ Projeto-biblioteca-de-filmes/
     └── script.js     # Lógica da aplicação, estado, filtros, datas e localStorage
 ```
 
-## 🚀 Como executar
+## 🚀 Como executar?
 
 Não é preciso instalar nada. Basta um navegador moderno (Chrome, Edge, Firefox ou Safari).
 
