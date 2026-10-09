@@ -129,9 +129,9 @@ Depois, abra o `index.html` no navegador. Se preferir, use a extensão **Live Se
 
 ## 👨‍💻 Desenvolvedores
 
-**Ronald Eli**
+**Ronald Eli** [![GitHub](https://img.shields.io/badge/GitHub-ronaldeli-181717?style=flat&logo=github)](https://github.com/ronaldeli)
 
-**Ittalo Henrique**
+**Ittalo Henrique** [![GitHub](https://img.shields.io/badge/GitHub-Ittalohsilva-181717?style=flat&logo=github)](https://github.com/Ittalohsilva) |
 
 **Cleberson Murilo**
 
