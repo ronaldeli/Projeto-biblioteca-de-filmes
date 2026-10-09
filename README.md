@@ -133,7 +133,7 @@ Depois, abra o `index.html` no navegador. Se preferir, use a extensão **Live Se
 
 **Ittalo Henrique** [![GitHub](https://img.shields.io/badge/GitHub-Ittalohsilva-181717?style=flat&logo=github)](https://github.com/Ittalohsilva)
 
-**Cleberson Murilo** [![GitHub](https://img.shields.io/badge/GitHub-Cleberson7-dev's-181717?style=flat&logo=github)](https://github.com/Cleberson7-dev's)
+**Cleberson Santos** [![GitHub](https://img.shields.io/badge/GitHub-Cleberson7-dev's-181717?style=flat&logo=github)](https://github.com/Cleberson7-dev's)
 
 **Victor Matheus** [![GitHub](https://img.shields.io/badge/GitHub-Victor98-181717?style=flat&logo=github)](https://github.com/Victor98)
 
