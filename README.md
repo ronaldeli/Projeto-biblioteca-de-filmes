@@ -141,6 +141,6 @@ Depois, abra o `index.html` no navegador. Se preferir, use a extensão **Live Se
 
 <div align="center">
 
-Desenvolvido com 💙 para fins de estudo
+Desenvolvido com dedicação para fins de estudo
 
 </div>
