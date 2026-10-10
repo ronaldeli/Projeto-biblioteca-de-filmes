@@ -145,8 +145,6 @@ Documentação e Organização: Suporte na formatação e redação da documenta
 
 **Projeto acadêmico desenvolvido para a faculdade com o objetivo de criar uma aplicação web completa para gerenciamento e catálogo pessoal de filmes.**
 
-</div>
-
 Desenvolvido com dedicação para fins de estudo
 
 </div>
